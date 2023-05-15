@@ -1,0 +1,33 @@
+.main {
+
+  &_container {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+
+    h3 {
+      margin-left: 160px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &_items {
+    span {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////
+
+@media (max-width: 992px) and (min-height: 600px) {
+  .main {
+    &_container {
+      h3 {
+        font-size: 34px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
